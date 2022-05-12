@@ -68,6 +68,7 @@ type (
 	}
 	panelType   int8
 	CommonPanel struct {
+		Interval   *string `json:"interval,omitempty"`
 		Datasource *string `json:"datasource,omitempty"` // metrics
 		Editable   bool    `json:"editable"`
 		Error      bool    `json:"error"`
